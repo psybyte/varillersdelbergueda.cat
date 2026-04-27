@@ -59,6 +59,7 @@ let lang = 'ca';
 
 const t = {
   ca: {
+    nav_inici:     'Inici',
     nav_serveis:   'Serveis',
     nav_com:       'Com treballem',
     nav_galeria:   'Galeria',
@@ -98,6 +99,7 @@ const t = {
     footer_zone:   'Varillersdelberguedà',
   },
   es: {
+    nav_inici:     'Inicio',
     nav_serveis:   'Servicios',
     nav_com:       'Cómo trabajamos',
     nav_galeria:   'Galería',
