@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+
+every time a tag is created update all images url to point to this new tag as we are using jsdeliver with github

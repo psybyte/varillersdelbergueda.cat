@@ -425,7 +425,6 @@ h2::after {
   width: 280px;
   object-fit: contain;
   border-radius: 24px;
-  background: var(--dark);
 }
 
 /* ===== TEAM ===== */
