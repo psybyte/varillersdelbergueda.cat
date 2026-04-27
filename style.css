@@ -491,6 +491,12 @@ h2::after {
 }
 .contact-email:hover { color: var(--white); }
 
+.contact-phone--email {
+  font-size: 1rem;
+  letter-spacing: 0;
+  word-break: break-all;
+}
+
 .zone-info {
   margin-top: 2rem;
   padding: 1.1rem 1.5rem;

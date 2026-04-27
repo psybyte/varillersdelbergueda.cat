@@ -97,6 +97,9 @@ const t = {
     cta_email:     'Envia un correu',
     zone_text:     'Zona principal: Berguedà \u00a0·\u00a0 Treballem a tot Catalunya \u00a0·\u00a0 Desplaçament a domicili',
     footer_zone:   'Varillersdelberguedà',
+    cta_info_title:'Informació general',
+    cta_info_desc: 'Per a consultes generals, pressupostos o qualsevol informació.',
+    cta_info_btn:  'Envia un correu',
   },
   es: {
     nav_inici:     'Inicio',
@@ -137,6 +140,9 @@ const t = {
     cta_email:     'Enviar correo',
     zone_text:     'Zona principal: Berguedà \u00a0·\u00a0 Trabajamos en toda Cataluña \u00a0·\u00a0 Desplazamiento a domicilio',
     footer_zone:   'Varillersdelberguedà',
+    cta_info_title:'Información general',
+    cta_info_desc: 'Para consultas generales, presupuestos o cualquier información.',
+    cta_info_btn:  'Enviar correo',
   }
 };
 
