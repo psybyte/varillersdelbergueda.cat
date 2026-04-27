@@ -57,6 +57,15 @@ a { color: inherit; }
   font-weight: 900;
   letter-spacing: 0.5px;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-logo-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: block;
 }
 .logo-mc   { color: var(--green); }
 .logo-tech { color: var(--white); }
@@ -249,19 +258,19 @@ a { color: inherit; }
 .btn-secondary {
   display: inline-block;
   background: transparent;
-  color: var(--gray);
+  color: #aaa;
   font-weight: 600;
   font-size: 0.875rem;
   padding: 0.65rem 1.5rem;
   border-radius: var(--radius);
   text-decoration: none;
-  border: 1.5px solid #ddd;
+  border: 1.5px solid #555;
   transition: all var(--ease);
   text-align: center;
 }
 .btn-secondary:hover {
-  border-color: var(--dark);
-  color: var(--dark);
+  border-color: var(--white);
+  color: var(--white);
 }
 
 /* ===== SECTIONS ===== */
@@ -277,6 +286,17 @@ a { color: inherit; }
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
+/* Dark card overlay for light sections */
+.section:not(.section-dark) .container {
+  background: rgba(17, 17, 17, 0.88);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  color: var(--white);
+  backdrop-filter: blur(2px);
+}
+.section:not(.section-dark) h2 { color: var(--white); }
+.section:not(.section-dark) .section-sub { color: #999; }
 
 h2 {
   font-size: clamp(1.6rem, 4vw, 2.2rem);
@@ -311,15 +331,15 @@ h2::after {
 }
 
 .card {
-  background: var(--white);
-  border: 1px solid #e8e8e8;
+  background: var(--dark3);
+  border: 1px solid #333;
   border-top: 4px solid var(--green);
   border-radius: var(--radius);
   padding: 2rem 1.5rem;
   transition: box-shadow var(--ease), transform var(--ease);
 }
 .card:hover {
-  box-shadow: 0 8px 28px rgba(0,0,0,0.09);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.4);
   transform: translateY(-2px);
 }
 
@@ -341,10 +361,11 @@ h2::after {
   font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: var(--white);
 }
 .card p {
   font-size: 0.875rem;
-  color: #666;
+  color: #aaa;
   line-height: 1.65;
 }
 
@@ -520,7 +541,7 @@ h2::after {
 .zone-info {
   margin-top: 2rem;
   padding: 1.1rem 1.5rem;
-  background: var(--gray-light);
+  background: var(--dark3);
   border-radius: var(--radius);
   border-left: 4px solid var(--green);
   display: flex;
@@ -534,7 +555,7 @@ h2::after {
 }
 .zone-info p {
   font-size: 0.875rem;
-  color: #555;
+  color: #aaa;
 }
 
 /* ===== FOOTER ===== */
