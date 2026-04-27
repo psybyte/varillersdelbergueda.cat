@@ -436,6 +436,10 @@ h2::after {
   transform: scale(1.03);
   opacity: 0.88;
 }
+.gallery-grid img:last-child:nth-child(3n+1) {
+  grid-column: 1 / -1;
+  height: 300px;
+}
 
 /* ===== CONTACT ===== */
 .contact-grid {
